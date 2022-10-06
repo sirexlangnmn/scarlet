@@ -1,0 +1,56 @@
+<header>
+    <div class="header_wrap">
+        <div class="header_inner mcontainer">
+            <div class="left_side">
+                <div id="logo">
+                    <a href="" style="vertical-align: middle;">
+                        <!-- === LOGO - START === -->
+                        <%- include('../header_logo/index.ejs') %>
+                        <!-- === LOGO - END === -->
+                    </a>
+                </div>
+            </div>
+            <!-- === NAVIGATION - START === -->
+            <div class="header_search">
+                <!-- === NAVIGATION ICON - START === -->
+                <%- include('../nav/nav-outside-home-page.ejs') %>
+                <!-- === NAVIGATION ICON - END === -->
+            </div>
+            <!-- === NAVIGATION - END === -->
+            <div class="right_side" id="right_side_with_session" style="display: none; margin-top: -40px;">
+                <div class="header_widgets">
+                    <!-- === CART - START === -->
+                    <%- include('../header_cart/index.ejs') %>
+                    <!-- === CART - END === -->
+
+                    <!-- === NOTIFICATIONS - START === -->
+                    <%- include('../header_notif/index.ejs') %>
+                    <!-- === NOTIFICATIONS - END === -->
+
+                    <!-- === MESSAGES - START === -->
+                    <%- include('../header_message/index.ejs') %>
+                    <!-- === MESSAGES - END === -->
+
+                    <!-- === AVATAR - START === -->
+                    <%- include('../header_avatar/index.ejs') %>
+                    <!-- === AVATAR - END === -->
+                </div>
+            </div>
+            <div class="right_side" id="right_side_with_no_session" style="display: none; margin-top: -40px;">
+                <div class="header_widgets">
+                    <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
+                        <a href="#" onclick="goToLoginPage()" class="bg-blue-500 blue-500 px-6 py-3 rounded-md shadow text-white blue-white-hover">Login</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    function goToLoginPage() {
+      location.replace(host + '/login');
+    }
+</script> 

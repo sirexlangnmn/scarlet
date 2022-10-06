@@ -1,0 +1,48 @@
+<header>
+    <div class="header_wrap">
+        <div class="header_inner mcontainer">
+            <div class="left_side">
+                <div id="logo">
+                    <a href="" style="vertical-align: middle;">
+                        <!-- === LOGO - START === -->
+                        <%- include('../header_logo/index.ejs') %>
+                        <!-- === LOGO - END === -->
+                    </a>
+                </div>
+            </div>
+            <!-- === NAVIGATION - START === -->
+            <div class="header_search">
+                <!-- === NAVIGATION ICON - START === -->
+                <%- include('../nav/nav-outside-home-page.ejs') %>
+                <!-- === NAVIGATION ICON - END === -->
+            </div>
+            <!-- === NAVIGATION - END === -->
+            <div class="right_side">
+                <div class="header_widgets">
+                    <!-- === CART - START === -->
+                    <%- include('../header_cart/index.ejs') %>
+                    <!-- === CART - END === -->
+
+                    <!-- === NOTIFICATIONS - START === -->
+                    <%- include('../header_notif/index.ejs') %>
+                    <!-- === NOTIFICATIONS - END === -->
+
+                    <!-- === MESSAGES - START === -->
+                    <%- include('../header_message/index.ejs') %>
+                    <!-- === MESSAGES - END === -->
+
+                    <!-- === AVATAR - START === -->
+                    <%- include('../header_avatar/index.ejs') %>
+                    <!-- === AVATAR - END === -->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    function goToLoginPage() {
+      location.replace(host + '/login');
+    }
+</script> 
